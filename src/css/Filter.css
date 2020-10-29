@@ -1,0 +1,19 @@
+.MuiToolbar-root.MuiToolbar-regular.MuiToolbar-gutters {
+    position: fixed !important;
+    z-index: 1 !important;
+    width: 100% !important;
+    background-color: inherit;
+}
+.makeStyles-inputInput-7 {
+    width: 17ch !important;
+}
+.searching {
+    margin-right: 40px;
+}
+fieldset.MuiBox-root.MuiBox-root-9 {
+    margin-right: 40px;
+}
+.MuiBox-root-9 {
+    border-color: transparent;
+    margin-bottom: 0px !important;
+}

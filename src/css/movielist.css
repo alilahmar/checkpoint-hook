@@ -1,0 +1,9 @@
+.listofcard {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 60px;
+    grid-row-gap: 30px;
+    margin: 20px 100px;
+  
+}
+

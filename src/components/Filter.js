@@ -10,6 +10,7 @@ import SearchIcon from "@material-ui/icons/Search";
 import Box from "@material-ui/core/Box";
 import Rating from "@material-ui/lab/Rating";
 import "../css/Filter.css";
+import {Link} from 'react-router-dom';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -89,7 +90,7 @@ export default function Navbar(props) {
             <MenuIcon />
           </IconButton>
           <Typography className={classes.title} variant="h6" noWrap>
-            Movies
+           <Link to='/'> Movies</Link>
           </Typography>
           <div className="searching">
             <div className={classes.search}>

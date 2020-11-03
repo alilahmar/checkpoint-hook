@@ -7,7 +7,9 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import Box from '@material-ui/core/Box';
 import Rating from '@material-ui/lab/Rating';
-import '../css/moviecard.css'
+import Button from '@material-ui/core/Button';
+import '../css/moviecard.css';
+import {Link} from 'react-router-dom';
 
 
 const useStyles = makeStyles({
@@ -19,7 +21,7 @@ const useStyles = makeStyles({
   },
 });
 
- const MovieCard=({title,description,url,rate})=> {
+ const MovieCard=({title,description,url,rate,id})=> {
   const classes = useStyles();
 
   return (
@@ -30,6 +32,9 @@ const useStyles = makeStyles({
           image={url}
           title="Contemplative Reptile"
         />
+         <Button variant="contained" color="primary" href="#contained-buttons">
+        <Link to={`/${id}`}>Link</Link>
+      </Button>
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
             {title}

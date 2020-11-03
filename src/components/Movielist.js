@@ -13,6 +13,7 @@ const Movielist = (props) => {
         .map((movies) => {
           return (
             <MovieCard
+              id={movies.id}
               key={movies.id}
               title={movies.title}
               description={movies.description}
